@@ -88,7 +88,10 @@ data class BitcoinVIn(
         val n: Int,
         val isConfirmed: Boolean?,
         val confirmations: Int?,
-        val unconfirmedInput: Boolean?
+        val unconfirmedInput: Boolean?,
+        val addr: String?,
+        val valueSat: Long?,
+        val value: Double?
 )
 
 data class BitcoinVOut(
